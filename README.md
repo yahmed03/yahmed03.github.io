@@ -13,6 +13,7 @@ Graduate training - git, VS Code, terminal and basic web page building with Gith
 - Create a [Github account](https://github.com/)
 - Xcode command line tools - `xcode-select --install`
 - Install [homebrew](https://brew.sh/) using `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- Install node using `brew install node`
 - Install [VS Code](https://code.visualstudio.com/) via homebrew using `brew install --cask visual-studio-code`
 
 # Tutorial
@@ -68,3 +69,23 @@ Here you will see the changes you have made on your new branch compared to the `
 - Add a title and description for your pull request
 - Click on the green `Create pull request` button
 - Wait for the pull request action to complete
+  - If any of the checks fail, you will need to fix the issues on your local machine/branch and push the changes to your branch again, then let the pull request action run again
+
+## Merging the pull request
+
+At this point, you should have a pull request open on your forked repository. You will now merge this pull request into the `main` branch.
+
+- Click on the green `Merge pull request` button
+- Click on the green `Confirm merge` button
+- Click the button to delete the branch after merging
+- Go back to the `Code` tab
+  - You should see that your changes have been merged into the `main` branch and only the `main` branch is available
+
+## Pulling the changes to your local machine
+
+Your remote and local repositories are now out of sync. You will now pull the changes from the remote repository to your local repository.
+
+- Checkout the `main` branch using `git checkout main` in your VS Code terminal
+- Pull the changes from the remote repository to your local repository using `git pull origin main`
+
+## Setting up Github Pages
