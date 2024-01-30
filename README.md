@@ -100,5 +100,50 @@ You will now set up Github Pages to host your web page.
 - Under `Build and Deploy`, select `main` as the branch and `/ (root)` as the folder
 - Click on the `Save` button
 - Wait for the Github Pages action to complete
-- Click on the link to your Github Pages site - should be in the format `https://<your_github_username>.github.io/<your_repository_name>/`
+- Click on the link to your Github Pages site
+  - should be in the format:
+    - `https://<your_github_username>.github.io/` (if you've named your repository `<your_github_username>.github.io`)
+    - `https://<your_github_username>.github.io/<your_repository_name>/` (if you've chosen a repository name other than `<your_github_username>.github.io`, you will need to add this to the url)
   - You should see your web page - this is live on the internet!
+
+# Extension tasks
+
+If you want to do more with your web page, here are a few ideas to get you started.
+
+> Recommended: delete the .github/workflows file (or edit it to your needs), as you may have trouble merging changes to your main branch if you have the training Github Action running on your repository.
+
+## Add a favicon (Easy)
+
+In the images folder, you can find a favicon image. This is the icon that appears in the browser tab. You can add this to your web page by adding the following code to the `<head>` section of your `index.html` file
+
+```html
+<link rel="icon" href="images/favicon.png" type="image/png" />
+```
+
+## Add Blog pages (Medium)
+
+You can have more than one page on your Github Pages site. You can add more pages by creating new html files in the root of your repository. You can then link to these pages from your `index.html` file.
+
+> Note - this is a very simple, framework-agnostic approach to creating websites which isn't recommended for larger projects. For larger projects, you would use a framework such as Ruby on Rails, NextJS, .NET, etc. Managing multiple loose html files can become difficult to maintain in large teams and projects.
+
+- Create a new html file in the root of your repository called `first_blog_post.html` (or similar)
+- Add some basic html for your blog post to the file
+- Add a link to your new blog post in the `index.html` file
+  - Consider adding a Latest Blog Posts section to the index page
+  - The link should be in the format `<a href="first_blog_post.html">First Blog Post</a>` and will be accessible at `https://<your_github_username>.github.io/first_blog_post.html`
+- Add a link back to the index page from your new blog post or a back button
+  - The link should be in the format `<a href="index.html">Back to Home</a>` and will be accessible at `https://<your_github_username>.github.io/index.html`
+
+## Setup Jekyll (Hard)
+
+Jekyll is a static site generator that is built into Github Pages. It allows you to create a site with multiple pages and blog posts using markdown files. You can read more about Jekyll [here](https://jekyllrb.com/).
+
+Full guide to setting up Jekyll on Github Pages [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll).
+
+If you want to try this, you can either:
+- Create a new branch with Jekyll setup and merge this into your `main` branch
+- Create a new repository with Jekyll setup and copy your changes from this repository into the new repository (recommended)
+
+The first option *could* work, but you may have trouble merging changes to your `main` branch if you have the training Github Action running on your repository.
+
+Creating a new repository is recommended as you can then copy your changes from this repository into the new repository. You can then delete this repository.
