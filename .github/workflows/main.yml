@@ -1,0 +1,51 @@
+## workflow to check that TODOs are removed and server launches
+name: Check TODOs, Lint HTML, and Server Launch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Check TODOs in index.html
+        run: |
+          if grep -q -r 'TODO' index.html; then
+            echo "Error: Found TODO comments in index.html"
+            exit 1
+          fi
+
+      - name: Check TODOs in style.css
+        run: |
+          if grep -q -r 'TODO' style.css; then
+            echo "Error: Found TODO comments in style.css"
+            exit 1
+          fi
+
+      - name: Download htmlhint
+        run: |
+          wget https://raw.githubusercontent.com/htmlhint/HTMLHint/master/dist/htmlhint.js
+
+      - name: Lint HTML
+        run: |
+          lint_result=$(node htmlhint.js 'index.html' 2>&1)
+          if [ $? -ne 0 ]; then
+            echo "HTML linting failed:"
+            echo "$lint_result"
+            exit 1
+          fi
+
+      - name: Check server launch
+        run: |
+          server_output=$(npx http-server -p 3000 2>&1)
+          if [ $? -ne 0 ]; then
+            echo "Error: Server launch failed"
+            echo "$server_output"
+            exit 1
+          fi
