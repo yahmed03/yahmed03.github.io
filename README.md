@@ -1,4 +1,5 @@
 # training_github_pages
+
 Graduate training - git, VS Code, terminal and basic web page building with Github Pages
 
 ## Learning Objectives
@@ -19,7 +20,9 @@ Graduate training - git, VS Code, terminal and basic web page building with Gith
 # Tutorial
 
 ## Forking the repository
+
 - Fork this repository to your own Github account
+  > Important! Rename the repository to `<your_github_username>.github.io` - this is required for Github Pages to work. Read more about Github Pages [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 - Clone your forked repository to your local machine using `git clone`
   - Think about where you want to clone the repository to on your local machine and consider using the `.` operator
 - Open the repository in VS Code using `code .`
