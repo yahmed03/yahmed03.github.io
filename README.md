@@ -89,3 +89,13 @@ Your remote and local repositories are now out of sync. You will now pull the ch
 - Pull the changes from the remote repository to your local repository using `git pull origin main`
 
 ## Setting up Github Pages
+
+You will now set up Github Pages to host your web page.
+
+- Go to the `Settings` tab on your forked repository
+- Under `Code and automation`, click on `Pages`
+- Under `Build and Deploy`, select `main` as the branch and `/ (root)` as the folder
+- Click on the `Save` button
+- Wait for the Github Pages action to complete
+- Click on the link to your Github Pages site - should be in the format `https://<your_github_username>.github.io/<your_repository_name>/`
+  - You should see your web page - this is live on the internet!
