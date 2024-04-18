@@ -16,6 +16,7 @@ Graduate training - git, VS Code, terminal and basic web page building with Gith
 - Install [homebrew](https://brew.sh/) using `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Install node using `brew install node`
 - Install [VS Code](https://code.visualstudio.com/) via homebrew using `brew install --cask visual-studio-code`
+- Allow `VS Code` to be opened with `code` command in terminal [link](https://code.visualstudio.com/docs/setup/mac#:~:text=Keep%20in%20Dock.-,Launching%20from%20the%20command%20line,code'%20command%20in%20PATH%20command.)
 
 # Tutorial
 
