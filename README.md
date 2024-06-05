@@ -70,6 +70,7 @@ npx http-server --port 3000
 ```
 
 You will see an output like this in your terminal:
+
 ![image](https://github.com/Solirius/training_github_pages/assets/42571140/7245c332-41aa-4d4a-b256-1c304fefda9b)
 
 Your webpage will now be hosted on `http://127.0.0.1/3000`. 
