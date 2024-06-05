@@ -58,6 +58,24 @@ Making changes on a new branch is good practice as it means you can work on mult
 
 Your changes should be on the github repository you forked on your account on the new branch you created.
 
+## Running a local webserver using `http-server`
+
+When modifying these simple webpages, you want to be able to view the website in your browser. You can do this by serving (e.g. making files available) on a local web address. The most common is `http://localhost` or `http://127.0.0.1`. When you lauch a server on your local machine, it is usually available only to you on your machine.
+
+To do so, we will use a library called (http-server)[https://www.npmjs.com/package/http-server]. 
+
+Copy this command in your terminal - make sure you are in the correct folder. You may see a prompt that says "Need to install the following packages:" - when prompted, enter "y" and press "enter"
+```bash
+npx http-server --port 3000
+```
+
+You will see an output like this in your terminal:
+![image](https://github.com/Solirius/training_github_pages/assets/42571140/7245c332-41aa-4d4a-b256-1c304fefda9b)
+
+Your webpage will now be hosted on `http://127.0.0.1/3000`. 
+
+Make as many changes to your html and css file as you would like, then move on to the next step.
+
 ## Creating a pull request
 
 You will now create a pull request to merge your changes from your new branch into the `main` branch. This is standard practice when working on a project with multiple people.
