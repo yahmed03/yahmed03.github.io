@@ -12,6 +12,7 @@ Graduate training - git, VS Code, terminal and basic web page building with Gith
 ## Prerequisites
 
 - Create a [Github account](https://github.com/)
+- Link Github Account on local machine [slides](https://docs.google.com/presentation/d/1mwmNqURjph1rqTWTNhRUxmFZ25ipC10IUaLHa2vlLVE/edit?usp=sharing)
 - Xcode command line tools - `xcode-select --install`
 - Install [homebrew](https://brew.sh/) using `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Install node using `brew install node`
