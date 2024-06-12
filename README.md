@@ -65,7 +65,7 @@ Your changes should be on the github repository you forked on your account on th
 
 When modifying these simple webpages, you want to be able to view the website in your browser. You can do this by serving (e.g. making files available) on a local web address. The most common is `http://localhost` or `http://127.0.0.1`. When you lauch a server on your local machine, it is usually available only to you on your machine.
 
-To do so, we will use a library called (http-server)[https://www.npmjs.com/package/http-server]. 
+To do so, we will use a library called [http-server](https://www.npmjs.com/package/http-server). 
 
 Copy this command in your terminal - make sure you are in the correct folder. You may see a prompt that says "Need to install the following packages:" - when prompted, enter "y" and press "enter"
 ```bash
