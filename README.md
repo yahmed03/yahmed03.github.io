@@ -19,7 +19,7 @@ Graduate training - git, VS Code, terminal and basic web page building with Gith
 - Install [VS Code](https://code.visualstudio.com/) via homebrew using `brew install --cask visual-studio-code`
 - Allow `VS Code` to be opened with `code` command in terminal [link](https://code.visualstudio.com/docs/setup/mac#:~:text=Keep%20in%20Dock.-,Launching%20from%20the%20command%20line,code'%20command%20in%20PATH%20command.)
 
-If you are given a work Windows laptop, ask a tutor how to get setup or follow this guide: [here](https://github.com/lewagon/data-setup/blob/master/WINDOWS_keep_current.md)
+If you are given a work Windows laptop, ask a tutor how to get setup or follow this guide: [here](https://github.com/lewagon/setup/blob/master/windows.md)
 
 # Tutorial
 
