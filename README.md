@@ -11,12 +11,16 @@ Graduate training - git, VS Code, terminal and basic web page building with Gith
 
 ## Prerequisites
 
+You need to use the `Terminal` application on Mac (for any command line instructions) and following any links below.
+Steps that require `Terminal` use are marked with :computer: emoji.
+
 - Create a [Github account](https://github.com/)
-- Link Github Account on local machine [slides](https://docs.google.com/presentation/d/1mwmNqURjph1rqTWTNhRUxmFZ25ipC10IUaLHa2vlLVE/edit?usp=sharing)
-- Xcode command line tools - `xcode-select --install`
-- Install [homebrew](https://brew.sh/) using `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Install node using `brew install node`
-- Install [VS Code](https://code.visualstudio.com/) via homebrew using `brew install --cask visual-studio-code`
+- :computer: Xcode command line tools - `xcode-select --install`
+- :computer: Install [homebrew](https://brew.sh/) using `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- :computer: Install Github command line tools: `brew install gh`
+- Link Github Account on local machine [slides](https://docs.google.com/presentation/d/1mwmNqURjph1rqTWTNhRUxmFZ25ipC10IUaLHa2vlLVE/edit?usp=sharing) - read carefully, this is a really important step - if you're confused, ask for help.
+- :computer: Install node using `brew install node`
+- :computer: Install [VS Code](https://code.visualstudio.com/) via homebrew using `brew install --cask visual-studio-code`
 - Allow `VS Code` to be opened with `code` command in terminal [link](https://code.visualstudio.com/docs/setup/mac#:~:text=Keep%20in%20Dock.-,Launching%20from%20the%20command%20line,code'%20command%20in%20PATH%20command.)
 
 If you are given a work Windows laptop, ask a tutor how to get setup or follow this guide: [here](https://github.com/lewagon/setup/blob/master/windows.md)
