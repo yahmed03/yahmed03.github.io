@@ -1,4 +1,5 @@
 /* Fonts */
+/* add new fonts from Google Fonts: https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
@@ -7,6 +8,8 @@
   width: 700px;
 }
 
+/* basic media queries for responsiveness */
+/* read more here: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
 @media (max-width: 960px) {
   .container {
     width: 700px;
